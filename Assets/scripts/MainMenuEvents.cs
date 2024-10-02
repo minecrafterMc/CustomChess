@@ -9,15 +9,12 @@ public class MainMenuEvents : MonoBehaviour
 
     private Button _button;
 
-    private Toggle _checkbox;
-
     private List<Button> _menuButtons = new List<Button>();
 
     private void Awake(){
         _document = GetComponent<UIDocument>();
 
         _button = _document.rootVisualElement.Q("openModeEditor") as Button;
-        _checkbox = _document.rootVisualElement.Q("testToggle") as Toggle;
         _button.RegisterCallback<ClickEvent>(OnPlayerGameClick);
 
         _menuButtons = _document.rootVisualElement.Query<Button>().ToList();
@@ -34,7 +31,8 @@ public class MainMenuEvents : MonoBehaviour
     }
 
     private void OnPlayerGameClick(ClickEvent evt){
-        Debug.Log(_checkbox.value);
+        Debug.Log(_button.style);
+        //_button.Attributes.Text = "a";
     }
     public void OnAnyButtonClick(ClickEvent evt){
         Debug.Log("all test");

@@ -4,6 +4,5 @@
         <ui:Label tabindex="-1" text="Main Menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header" class="header" />
         <ui:Button text="Open Mode Editor" parse-escape-sequences="true" display-tooltip-when-elided="true" name="openModeEditor" class="button" style="font-size: 50%;" />
         <ui:Button text="My Modes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MyModes" enable-rich-text="true" class="button" style="font-size: 50%;" />
-        <ui:Toggle label="Toggle" value="false" name="testToggle" />
     </ui:VisualElement>
 </ui:UXML>
