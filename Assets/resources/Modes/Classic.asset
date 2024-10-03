@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de96fea833f4aa64687e5323eacbfe6c, type: 3}
   m_Name: Classic
   m_EditorClassIdentifier: 
-  ModeName: 
+  ModeName: Classic
+  ModeDesc: A classic mode of chess
   PortraitImage: {fileID: 0}
-  shapes: []
+  shapes:
+  - {fileID: 11400000, guid: 85a477c5873afa84e9b4dec315556e79, type: 2}
+  - {fileID: 11400000, guid: 2ef9787cab4bfef4e8e0fbe937794606, type: 2}
+  - {fileID: 11400000, guid: a7df9096fafc4eb4a91ded6bd899a97e, type: 2}
+  - {fileID: 11400000, guid: 7a139798d5e791046a1ad44c329e38f2, type: 2}
+  - {fileID: 11400000, guid: 20d4d30afe8b4794794615496625e4cf, type: 2}
+  - {fileID: 11400000, guid: 6c977574ce2e38f4a9a8e80ec08d59cc, type: 2}

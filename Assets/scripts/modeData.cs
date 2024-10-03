@@ -33,7 +33,8 @@ public class shape : ScriptableObject{
 public class modeData : ScriptableObject
 {
     public string ModeName;
+    public string ModeDesc;
     public Sprite PortraitImage;
-    public shape[] shapes;
+    public List<shape> shapes;
     //[SerializeField]
 }

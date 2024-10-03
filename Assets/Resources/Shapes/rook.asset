@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: king
+  m_Name: rook
   m_EditorClassIdentifier: Assembly-CSharp::shape
-  name: King
-  moveDistanceLimit: 1
-  canMoveInfinitely: 0
-  moveDirections: 020000000200000002000000020000000200000002000000020000000200000000000000000000000000000000000000
-  isImportant: 1
+  name: rook
+  moveDistanceLimit: 0
+  canMoveInfinitely: 1
+  moveDirections: 020000000200000002000000020000000000000000000000000000000000000000000000000000000000000000000000
+  isImportant: 0

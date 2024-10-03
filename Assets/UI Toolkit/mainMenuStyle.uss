@@ -41,3 +41,10 @@
     background-color: rgb(171, 171, 171);
     color: rgb(65, 65, 65);
 }
+
+.ModeDetailsText {
+    align-self: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: normal;
+}
