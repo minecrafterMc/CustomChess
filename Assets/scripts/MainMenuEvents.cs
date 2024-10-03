@@ -10,6 +10,7 @@ public class MainMenuEvents : MonoBehaviour
     private Button _editorButton;
     private Button _savedModesButton;
     private Button _savedModesCloseButton;
+    private Button _quitButton;
     private VisualElement myModesMenu;
     private List<Button> _menuButtons = new List<Button>();
     
@@ -21,10 +22,12 @@ public class MainMenuEvents : MonoBehaviour
         _editorButton = _document.rootVisualElement.Q("openModeEditor") as Button;
         _savedModesButton = _document.rootVisualElement.Q("myModes") as Button;
         _savedModesCloseButton = _document.rootVisualElement.Q("modeMenuClose") as Button;
+        _quitButton = _document.rootVisualElement.Q("quit") as Button;
         myModesMenu = _document.rootVisualElement.Q("savedModesContainer") as VisualElement;
         _editorButton.RegisterCallback<ClickEvent>(OnModeEditorButtonPressed);
         _savedModesButton.RegisterCallback<ClickEvent>(OnMyModesButtonPressed);
         _savedModesCloseButton.RegisterCallback<ClickEvent>(OnMyModesCloseButtonPressed);
+        _quitButton.RegisterCallback<ClickEvent>(QuitGame);
 
         _menuButtons = _document.rootVisualElement.Query<Button>().ToList();
         for (int i = 0; i < _menuButtons.Count;i++){
@@ -52,7 +55,10 @@ public class MainMenuEvents : MonoBehaviour
     private void OnMyModesCloseButtonPressed(ClickEvent evt){
         myModesMenu.style.display = DisplayStyle.None;
     }
-    public void OnAnyButtonClick(ClickEvent evt){
+    private void OnAnyButtonClick(ClickEvent evt){
         Debug.Log(myModesMenu.style.display);
+    }
+    void QuitGame(ClickEvent evt) {
+        Application.Quit();
     }
 }

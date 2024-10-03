@@ -27,7 +27,7 @@
     scale: 1 1;
     transition-property: all;
     align-self: center;
-    margin-top: 197px;
+    margin-top: 50px;
     max-width: 40%;
 }
 
