@@ -1,7 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+[CreateAssetMenu]
+public class board : ScriptableObject{
+    public string name;
+    public int width;
+    public int height;
+    public int[] shape;
+    public int[] getBoard(){
 
+    }
+}
 [CreateAssetMenu]
 public class shape : ScriptableObject{
     public string name;
@@ -25,7 +34,7 @@ public class shape : ScriptableObject{
     //9- horse down right
     //10- horse down left
     //11- horse up left
-    public int[] moveDirections;
+    public int[] moveDirections = [0,0,0,0,0,0,0,0,0,0,0,0];
     public bool isImportant;
 
 }
