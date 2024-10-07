@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de96fea833f4aa64687e5323eacbfe6c, type: 3}
-  m_Name: Classic
+  m_Name: test
   m_EditorClassIdentifier: 
-  _shape: []
-  ModeName: Classic
-  ModeDesc: A classic mode of chess
+  ModeName: 
+  ModeDesc: 
   PortraitImage: {fileID: 0}

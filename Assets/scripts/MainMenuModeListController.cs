@@ -101,7 +101,7 @@ public class MainMenuModeListController
         m_modeShapeList.text = "Shapes:";
         Debug.Log(selectedMode);
         for (int i = 0;i<selectedMode.shapes.Count;i++){
-            m_modeShapeList.text +=  ", " + selectedMode.shapes[i].name;
+            m_modeShapeList.text +=  ", " + selectedMode.shapes[i]._name;
         }
     }
 }
