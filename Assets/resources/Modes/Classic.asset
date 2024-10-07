@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8998463064491872388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb73a5590247d594292118efc31c3538, type: 3}
+  m_Name: Bishop
+  m_EditorClassIdentifier: 
+  _parentMode: {fileID: 11400000}
+  _name: Bishop
+  isImportant: 0
+  moveDirections: 000000000000000000000000000000000200000002000000020000000200000000000000000000000000000000000000
+  moveDistances: 00000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000
+  UsesFirstMoveBoost: 0
+  moveFirstDistances: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &-4460866234075978372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb73a5590247d594292118efc31c3538, type: 3}
+  m_Name: King
+  m_EditorClassIdentifier: 
+  _parentMode: {fileID: 11400000}
+  _name: King
+  isImportant: 1
+  moveDirections: 020000000200000002000000020000000200000002000000020000000200000000000000000000000000000000000000
+  moveDistances: 010000000100000001000000010000000100000001000000010000000100000000000000000000000000000000000000
+  UsesFirstMoveBoost: 0
+  moveFirstDistances: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &-2418299547239280470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb73a5590247d594292118efc31c3538, type: 3}
+  m_Name: Queen
+  m_EditorClassIdentifier: 
+  _parentMode: {fileID: 11400000}
+  _name: Queen
+  isImportant: 0
+  moveDirections: 020000000200000002000000020000000200000002000000020000000200000000000000000000000000000000000000
+  moveDistances: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000000000000000000000000000
+  UsesFirstMoveBoost: 0
+  moveFirstDistances: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,7 +69,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de96fea833f4aa64687e5323eacbfe6c, type: 3}
   m_Name: Classic
   m_EditorClassIdentifier: 
-  _shape: []
+  _shape:
+  - {fileID: -4460866234075978372}
+  - {fileID: 9088294681339942238}
+  - {fileID: -2418299547239280470}
+  - {fileID: -8998463064491872388}
+  - {fileID: 7627936483220434183}
+  - {fileID: 5123745003896593617}
   ModeName: Classic
   ModeDesc: A classic mode of chess
   PortraitImage: {fileID: 0}
+--- !u!114 &5123745003896593617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb73a5590247d594292118efc31c3538, type: 3}
+  m_Name: New Shape
+  m_EditorClassIdentifier: 
+  _parentMode: {fileID: 11400000}
+  _name: 
+  isImportant: 0
+  moveDirections: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  moveDistances: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  UsesFirstMoveBoost: 0
+  moveFirstDistances: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &7627936483220434183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb73a5590247d594292118efc31c3538, type: 3}
+  m_Name: Rook
+  m_EditorClassIdentifier: 
+  _parentMode: {fileID: 11400000}
+  _name: Rook
+  isImportant: 0
+  moveDirections: 020000000200000002000000020000000000000000000000000000000000000000000000000000000000000000000000
+  moveDistances: ffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000
+  UsesFirstMoveBoost: 0
+  moveFirstDistances: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &9088294681339942238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb73a5590247d594292118efc31c3538, type: 3}
+  m_Name: Pawn
+  m_EditorClassIdentifier: 
+  _parentMode: {fileID: 11400000}
+  _name: Pawn
+  isImportant: 0
+  moveDirections: 010000000000000000000000000000000300000000000000000000000300000000000000000000000000000000000000
+  moveDistances: 010000000000000000000000000000000100000000000000000000000100000000000000000000000000000000000000
+  UsesFirstMoveBoost: 1
+  moveFirstDistances: 020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
